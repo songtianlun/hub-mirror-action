@@ -8,15 +8,15 @@ jobs:
     - name: Checkout source codes
       uses: actions/checkout@v1
     - name: Mirror Github to Gitee
-      uses: ./.
+      uses: songtianlun/hub-mirror-action
       with:
-        src: github/kunpengcompute
-        dst: gitee/kunpengcompute
+        src: github/songtianlun
+        dst: gitee/songtianlun
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
         account_type: org
         # Only sync Kunpeng
-        black_list: 'KAE'
-        white_list: 'KAE,Kunpeng,kunpengcompute.github.io'
+        # black_list: 'KAE'
+        # white_list: 'KAE,Kunpeng,kunpengcompute.github.io'
         force_update: true
         debug: true
