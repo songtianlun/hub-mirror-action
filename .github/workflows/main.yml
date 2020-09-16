@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the Github organization repos to Gitee.
-      uses: songtianlun/gitee-mirror-action@v0.01
+      uses: Yikun/gitee-mirror-action
       with:
         # Gitee对应的秘钥
         private_key: ${{ secrets.GITEE_PRIVATE_KEY }}
