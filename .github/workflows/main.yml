@@ -19,3 +19,4 @@ jobs:
         src: github/songtianlun
         # 需要同步到的Gitee的组织名（目的）
         dst: gitee/songtianlun
+        account_type: user
